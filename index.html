@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BXC-CODEX | Cracking Course & Panels</title>
+  <link href="https://i.pinimg.com/originals/9a/1f/11/9a1f11839c9f9e902f09e8259805319a.gif" rel="stylesheet">
+  <style>
+    body {
+
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: black url('https://i.pinimg.com/originals/c6/0f/b6/c60fb60b5f76ef7cd2bf80862ab251fb.gif') no-repeat center center fixed;
+      background-size: cover;
+      color: #00ffcc;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem;
+      animation: glitch 5s infinite alternate;
+    }
+
+    h1 {
+      font-size: 3rem;
+      text-shadow: 0 0 10px #0ff, 0 0 20px #00f;
+    }
+
+    .intro {
+      text-align: center;
+      margin: 1rem auto;
+      max-width: 700px;
+      padding: 1rem;
+      background-color: rgba(0,0,0,0.7);
+      border-radius: 10px;
+      box-shadow: 0 0 20px #0ff;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    .panel-section {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .panel-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .panel-buttons button {
+      background: transparent;
+      border: 2px solid #00ffcc;
+      color: #00ffcc;
+      padding: 0.7rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      animation: neonPulse 2s infinite;
+    }
+
+    .panel-buttons button:hover {
+      background: #00ffcc;
+      color: #000;
+      transform: scale(1.1);
+      box-shadow: 0 0 20px #0ff, 0 0 40px #0ff;
+    }
+
+    .price-box {
+      margin: auto;
+      max-width: 600px;
+      background: rgba(0,0,0,0.8);
+      padding: 1rem;
+      border-radius: 10px;
+      border: 1px solid #00ffcc;
+      box-shadow: 0 0 20px #00ffcc;
+      animation: fadeIn 1s ease forwards;
+      display: none;
+    }
+
+    .price-box h3 {
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+
+    .price-box p {
+      color: #ccc;
+      margin: 0.3rem 0;
+    }
+
+    .payment-section {
+      text-align: center;
+      margin-top: 4rem;
+      animation: fadeIn 4s ease;
+    }
+
+    .payment-section h2 {
+      margin-bottom: 1rem;
+    }
+
+    .payment-section p {
+      margin: 0.2rem;
+    }
+
+    .discord-btn {
+      display: inline-block;
+      margin-top: 2rem;
+      background-color: #7289da;
+      color: white;
+      padding: 0.8rem 2rem;
+      border-radius: 8px;
+      font-size: 1.2rem;
+      text-decoration: none;
+      transition: 0.3s;
+      animation: neonPulse 2s infinite;
+    }
+
+    .discord-btn:hover {
+      background-color: #5b6eae;
+      box-shadow: 0 0 20px #7289da, 0 0 40px #7289da;
+    }
+
+    #batmanAnswer {
+      display: none;
+      max-width: 700px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: rgba(0,0,0,0.7);
+      border: 1px solid #00ffcc;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #00ffcc;
+      text-align: center;
+      color: #ccc;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    @keyframes neonPulse {
+      0% { box-shadow: 0 0 5px #0ff; }
+      50% { box-shadow: 0 0 20px #0ff; }
+      100% { box-shadow: 0 0 5px #0ff; }
+    }
+
+    @keyframes glitch {
+      0% { text-shadow: 2px 2px red; }
+      50% { text-shadow: -2px -2px blue; }
+      100% { text-shadow: 2px 2px lime; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🦇 BXC-KAZU</h1>
+  </header>
+
+  <div class="intro">
+    <p>🔥 Learn CRACKING from the BXC-CODEX Team! Join our Discord, access our powerful tools & panels, and start your journey into the underground world.</p>
+  </div>
+
+  <div class="panel-section">
+    <h2>💻 Available Panels</h2>
+    <div class="panel-buttons">
+      <button onclick="showPrices('internal')">Internal Panel</button>
+      <button onclick="showPrices('max')">Internal Max+</button>
+      <button onclick="showPrices('premium')">Premium Panel</button>
+      <button onclick="showPrices('basic')">Basic Panel</button>
+      <button onclick="showPrices('silent')">Aim Silent</button>
+      <button onclick="showPrices('aimkill')">Aimkill</button>
+      <button onclick="showPrices('streamer')">Streamer Panel</button>
+      <button onclick="showPrices('crack')">Cracking Course</button>
+      <button onclick="showBatman()">Who is BXC-KAZU?</button>
+    </div>
+
+    <div class="price-box" id="priceBox">
+      <h3 id="panelTitle"></h3>
+      <div id="priceList"></div>
+    </div>
+
+    <div id="batmanAnswer">
+      <p><strong>BXC-KAZU</strong> is a highly skilled individual recognized for his proficiency in reverse engineering, web development, graphic design, video editing, and cybersecurity. He plays a pivotal role in the BXC-CODEX ecosystem, contributing technical excellence and creative leadership across multiple domains.</p>
+    </div>
+  </div>
+
+  <div class="payment-section">
+    <h2>💰 Payment Methods</h2>
+    <p>UPI: <strong>7864003504@ybl</strong></p>
+    <p>UPI: Accepted</p>
+    <p>PayPal: Accepted</p>
+    <p>Binance: Accepted</p>
+
+    <a href="https://discord.gg/WasV2Fn5nK" target="_blank" class="discord-btn">Join Discord</a>
+  </div>
+
+  <script>
+    const priceData = {
+      internal: {
+        name: 'Internal Panel',
+        prices: ['1 Week - ₹500', '1 Month - ₹900', 'Permanent - ₹2000']
+      },
+      max: {
+        name: 'Internal Max+',
+        prices: ['1 Week - ₹700', '1 Month - ₹1150', 'Permanent - ₹2999']
+      },
+      premium: {
+        name: 'Premium Panel',
+        prices: ['1 Week - ₹300', '1 Month - ₹700', 'Permanent - ₹1500']
+      },
+      basic: {
+        name: 'Basic Panel',
+        prices: ['1 Week - ₹200', '1 Month - ₹500', 'Permanent - ₹1000']
+      },
+      silent: {
+        name: 'Aim Silent',
+        prices: ['1 Week - ₹700', '1 Month - ₹1300', 'Permanent - ₹3000']
+      },
+      aimkill: {
+        name: 'Aimkill Panel',
+        prices: ['1 Day - ₹100', '1 Week - ₹700', '1 Month - ₹1500', 'Permanent - ₹4000']
+      },
+      streamer: {
+        name: 'Streamer Panel',
+        prices: ['Permanent Only - ₹5000']
+      },
+      crack: {
+        name: 'Cracking Course',
+        prices: ['Cracking Course Only - ₹6000']
+      }
+    };
+
+    function showPrices(panelKey) {
+      const panel = priceData[panelKey];
+      document.getElementById("panelTitle").innerText = panel.name;
+      const list = panel.prices.map(p => `<p>${p}</p>`).join("");
+      document.getElementById("priceList").innerHTML = list;
+      document.getElementById("priceBox").style.display = 'block';
+      document.getElementById("batmanAnswer").style.display = 'none';
+    }
+
+    function showBatman() {
+      document.getElementById("priceBox").style.display = 'none';
+      document.getElementById("batmanAnswer").style.display = 'block';
+    }
+  </script>
+
+
+
+<audio controls autoplay loop>
+     <source src="song/song.mp3"
+</audio>
+  
+</body>
+</html>
